@@ -26,6 +26,11 @@ public class Clase_C extends Clase_B {
     }
 
     @Override
+     public void metodoB2() {
+        System.out.println("Este es el metodo B2 que sera sobreescrito en D");
+    }
+    
+    @Override
     public String toString() {
         return "Clase_C{" + "asignaturasImpartidas=" + asignaturasImpartidas + '}';
     }

@@ -21,6 +21,10 @@ public class Clase_B extends Clase_A {
     public void metodoB() {
         System.out.println("Este es el metodo B (que no está sobreescrito)");
     }
+    
+        public void metodoB2() {
+        System.out.println("Este es el metodo B2 que sera sobreescrito en C y D");
+    }
 
     @Override
     public String toString() {
