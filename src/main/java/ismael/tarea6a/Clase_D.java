@@ -11,7 +11,11 @@ package ismael.tarea6a;
  */
 public class Clase_D extends Clase_B{
     @Override
-    public void metodoA(){
+    public void metodoA(){//metodo A comun en todas las clases pero sobreescrito
         System.out.println("este es el metodo A de la clase D");
+    }
+    
+        public void metodoD(){
+        System.out.println("Este es el metodo D (que no está sobreescrito)");
     }
 }

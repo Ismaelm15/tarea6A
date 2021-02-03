@@ -10,7 +10,7 @@ package ismael.tarea6a;
  * @author ismael
  */
 public class Clase_A {
-    public void metodoA(){
+    public void metodoA(){//metodo A comun en todas las clases pero sobreescrito
         System.out.println("este es el metodo A de la clase A");
     }
 }
