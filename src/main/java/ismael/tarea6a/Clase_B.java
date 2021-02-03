@@ -9,15 +9,16 @@ package ismael.tarea6a;
  *
  * @author ismael
  */
-public class Clase_B extends Clase_A{
-    
+public class Clase_B extends Clase_A {
+
     int años_instituto;
+
     @Override
-    public void metodoA(){//metodo A comun en todas las clases pero sobreescrito
+    public void metodoA() {//metodo A comun en todas las clases pero sobreescrito
         System.out.println("este es el metodo A de la clase B");
     }
-    
-    public void metodoB(){
+
+    public void metodoB() {
         System.out.println("Este es el metodo B (que no está sobreescrito)");
     }
 
@@ -26,7 +27,23 @@ public class Clase_B extends Clase_A{
         return "Clase_B{" + "a\u00f1os_instituto=" + años_instituto + '}';
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 47 * hash + this.años_instituto;
+        return hash;
+    }
 
-    
-    
+    @Override
+    public boolean equals(Object obj) {
+        if (!super.equals(obj)) {
+            return false;
+        }
+        final Clase_B other = (Clase_B) obj;
+        if (this.años_instituto != other.años_instituto) {
+            return false;
+        }
+        return true;
+    }
+
 }
