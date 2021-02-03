@@ -5,11 +5,15 @@
  */
 package ismael.tarea6a;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ismael
  */
 public class Clase_D extends Clase_B{
+    
+    private ArrayList<String> asignaturasRecibidas;
     @Override
     public void metodoA(){//metodo A comun en todas las clases pero sobreescrito
         System.out.println("este es el metodo A de la clase D");
@@ -18,4 +22,11 @@ public class Clase_D extends Clase_B{
         public void metodoD(){
         System.out.println("Este es el metodo D (que no está sobreescrito)");
     }
+
+    @Override
+    public String toString() {
+        return "Clase_D{" + "asignaturasRecibidas=" + asignaturasRecibidas + '}';
+    }
+        
+        
 }

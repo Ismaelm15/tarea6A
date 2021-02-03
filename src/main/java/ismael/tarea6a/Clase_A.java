@@ -10,7 +10,20 @@ package ismael.tarea6a;
  * @author ismael
  */
 public class Clase_A {
+    
+    int edad;
+    String nombre;
+    
     public void metodoA(){//metodo A comun en todas las clases pero sobreescrito
         System.out.println("este es el metodo A de la clase A");
     }
+
+    @Override
+    public String toString() {
+        return "Clase_A{" + "edad=" + edad + ", nombre=" + nombre + '}';
+    }
+
+
+
 }
+
