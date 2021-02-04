@@ -37,6 +37,31 @@ public class Main {
         clases.add(a7);
         clases.add(a8);
 
+        for (Clase_A aux : clases) {
+            // Conversiones explícitas
+                           
+
+            if (aux instanceof Clase_B) {
+                ((Clase_B) aux).metodoA();
+                ((Clase_B) aux).metodoB();
+
+            }
+            if (aux instanceof Clase_C) {
+                Clase_C tmp = (Clase_C) aux;
+                ((Clase_C) aux).metodoA();
+
+                ((Clase_C) ((Clase_C) aux)).metodoC();
+            }
+            if (aux instanceof Clase_D) {
+                Clase_D tmp = (Clase_D) aux;
+                ((Clase_D) aux).metodoA();
+                ((Clase_D) aux).metodoD();
+
+            }
+        }
+        System.out.println(clases.indexOf(a8));
+        System.out.println(clases.contains(a5));
+        System.out.println(clases.remove(a4));
     }
 
 }
